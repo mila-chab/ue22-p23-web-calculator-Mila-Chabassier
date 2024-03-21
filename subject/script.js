@@ -6,24 +6,17 @@
 
 //Projet de mila chabassier
 
-//const calculator = document.querySelector(".calculator")
-//const keys = calculator.querySelector(".calculator__keys")
+const display = document.getElementById("calculator__display");
 
-//keys.addEventListener("click", e => {
- //if (e.target.matches("button")) {
-   // Do something
- //}
-//})
+console.log("Hello world!");
 
-function reponse_cliquee(id_clique){
-    let elt = document.getElementById(id_clique)
-    console.log(id_clique)
+function reponse_cliquee(nb){
+  if (display.textContent == '0'){
+      display.textContent = nb.textContent
+  }  
 }
 
+function supprimer(){
+  display.value = "0"
+}
 
-//const key = e.target
-//const action = key.dataset.action
-
-//if (!action) {
-//    console.log('number key!')
-//  }

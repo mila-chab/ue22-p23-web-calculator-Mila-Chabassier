@@ -14,25 +14,27 @@
       This component works exactly like the calculator you know. Click any number to start calculating!
     </p>
     <div class="calculator">
-      <div class="calculator__display">0</div>
+      <div class="calculator__display"> <input id="display" readonly>0</div>
 
       <div class="calculator__keys">
         <button class="key--operator" data-action="add">+</button>
         <button class="key--operator" data-action="subtract">-</button>
         <button class="key--operator" data-action="multiply">&times;</button>
         <button class="key--operator" data-action="divide">÷</button>
-        <button id="7" onclick = "reponse_cliquee(this.id)">7</button>
-        <button id="8">8</button>
-        <button>9</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>0</button>
+      
+        <button onclick="reponse_cliquee('7')">7</button>
+        <button id="8" onclick="reponse_cliquee(this.id)">8</button>
+        <button id="9" onclick="reponse_cliquee(this.id)">9</button>
+        <button id="4" onclick="reponse_cliquee(this.id)">4</button>
+        <button id="5" onclick="reponse_cliquee(this.id)">5</button>
+        <button id="6" onclick="reponse_cliquee(this.id)">6</button>
+        <button id="1" onclick="reponse_cliquee(this.id)">1</button>
+        <button id="2" onclick="reponse_cliquee(this.id)">2</button>
+        <button id="3" onclick="reponse_cliquee(this.id)">3</button>
+        <button id="0" onclick="reponse_cliquee(this.id)">0</button>
+
         <button data-action="decimal">.</button>
-        <button data-action="clear">AC</button>
+        <button data-action="clear" onclick="supprimer()">AC</button>
         <button class="key--equal" data-action="calculate">=</button>
       </div>
     </div>
